@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Card</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            
+            <div class="today-info">
+                <h2>Friday</h2>
+                <span>- August ----</span>
+                <div>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>city, --</span>
+                </div>
+            </div>
+
+            <div class="today-weather">
+                <i class="fa-regular fa-sun"></i>
+                <h1 class="weather-temp">--°C</h1>
+                <h3>Sunny</h3>
+            </div>
+
+        </div>
+
+        <div class="right-info">
+            <div class="day-info">
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span class="value">-- %</span>
+                </div>
+
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span class="value">-- %</span>
+                </div>
+
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span class="value">-- km/h</span>
+                </div>
+            </div>
+
+            <ul class="days-list">
+                <li>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>Sat</span>
+                    <span class="day-temp">--°C</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span>Sun</span>
+                    <span class="day-temp">--°C</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <span>Mon</span>
+                    <span class="day-temp">--°C</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cloud-moon"></i>
+                    <span>Tue</span>
+                    <span class="day-temp">--°C</span>
+                </li>
+
+            </ul>
+
+            <div class="btn-container">
+                <input type="text" placeholder="Enter City Name..." id="loc-input">
+                <button class="loc-button">Search Location</button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
