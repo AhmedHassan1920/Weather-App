@@ -48,11 +48,11 @@ function displayData() {
     `
 
     let listBox = ``;
-    for (let index = 1; index < 5; index++) {
+    for (let index = 1; index < allData.forecast.forecastday.length; index++) {
     let arrayDaysDateStringFromAPI = allData.forecast.forecastday[index].date;
     let apiArrayDayDate = new Date(arrayDaysDateStringFromAPI);
     let arrayDayName = apiArrayDayDate.toLocaleDateString('en-US', { weekday: 'long' });
-        console.log(arrayDaysDateStringFromAPI);
+
         listBox += `
         <li>
         <img class="icon" src="${allData.forecast.forecastday[index].day.condition.icon.split("/").splice(3,8).join("/")}" alt="">
