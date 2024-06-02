@@ -57,6 +57,7 @@ function displayData() {
         <li>
         <img class="icon" src="${allData.forecast.forecastday[index].day.condition.icon.split("/").splice(3,8).join("/")}" alt="">
         <span>${arrayDayName}</span>
+        <span class="day-temp">${allData.forecast.forecastday[index].day.maxtemp_c}°C</span>
         <span class="day-temp">${allData.forecast.forecastday[index].day.mintemp_c}°C</span>
     </li>
         `;
